@@ -10,4 +10,7 @@
 
     <context:component-scan base-package="com.hellonishad.test"></context:component-scan>
     <!--<bean id="vehicle" class="com.hellonishad.test.Bike"></bean>-->
+    <bean id="tire" class="com.hellonishad.test.Tire">
+        <property name="brand" value="MRF"></property>
+    </bean>
 </beans>
