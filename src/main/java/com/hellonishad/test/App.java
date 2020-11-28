@@ -10,10 +10,7 @@ public class App {
 	public static void main(String[] args) {
 		//SpringApplication.run(App.class, args);
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-//		Vehicle obj = (Vehicle) context.getBean("bike");
-//		obj.drive();
-
-		Tire tire = (Tire)context.getBean("tire");
-		System.out.println(tire);
+		Car obj = (Car) context.getBean("car");
+		obj.drive();
 	}
 }
