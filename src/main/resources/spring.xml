@@ -9,8 +9,9 @@
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <context:component-scan base-package="com.hellonishad.test"></context:component-scan>
-    <!--<bean id="vehicle" class="com.hellonishad.test.Bike"></bean>-->
+<!--    <bean id="vehicle" class="com.hellonishad.test.Bike"></bean>-->
     <bean id="tire" class="com.hellonishad.test.Tire">
-        <property name="brand" value="MRF"></property>
+<!--        <property name="brand" value="MRF"></property>-->
+        <constructor-arg value="MRF"></constructor-arg>
     </bean>
 </beans>
